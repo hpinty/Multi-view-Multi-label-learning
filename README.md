@@ -13,12 +13,16 @@ Our research includes the following articles that detail our methodologies and f
 
 The following datasets have been utilized in our research and are referenced within the aforementioned articles:
 
-- **Flags Dataset**
-- **CHD_49 Dataset**
-- **PlantPseAAC Dataset**
-- **Water Dataset**
-- **Slashdot Dataset**
-- **Delicious Dataset**
+- **yeast**
+- **VOC07**
+- **SCENE**
+- **OBJECT**
+- **MIRFlickr**
+- **iaprtc12**
+- **espgame**
+- **emotions**
+- **corel5k**
+- **3sources**
 
 Original addresses for these datasets can be found within the linked articles above.
 
@@ -34,8 +38,8 @@ We welcome contributions from the community, including bug reports, new features
 
 For any inquiries or collaboration opportunities, please contact:
 
-- Dr. [Your Name] ([your.email@example.com](mailto:your.email@example.com))
-- [Your Institution/Lab Name]
+- Postdoc. [Pingting Hao] ([862316425@qq.com](mailto:haopingting@jlu.edu.cn))
+- [Jilin University]
 
 Thank you for your interest in our research!
 
