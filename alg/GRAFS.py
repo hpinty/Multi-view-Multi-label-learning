@@ -1,13 +1,26 @@
+"""
+24-ins-Anchor-guided global view reconstruction for multi-view
+multi-label feature selection
+"""
 import time
 import numpy as np
 from numpy.random import seed
 from numpy import linalg as LA
 
 from skfeature.utility.construct_W import construct_W
+from scipy.spatial.distance import pdist
+from sklearn.preprocessing import MinMaxScaler
+import pylab as pl
+import matplotlib.pyplot as plt
+
 eps = 2.2204e-16
 
+def normalization(data):
+    _range = np.max(data) - np.min(data)
+    return (data - np.min(data)) / _range
 
-def GRAFS(X, x_view, Y, dataset, alpha, beta, gamma, lamb,kk):
+
+def view6(X, x_view, Y, dataset, alpha, beta, gamma, lamb,kk):# before setting is 100
     time_start = time.time()
     n_view = len(x_view)
     num, label_num = Y.shape
@@ -40,12 +53,12 @@ def GRAFS(X, x_view, Y, dataset, alpha, beta, gamma, lamb,kk):
     A2 = np.random.rand(k1, k1)
     W1 = np.random.rand(num, k1)
     X1 = np.dot(Y, W.T)
-
+    X1 = normalization(X1)
 
     R1 = np.dot(np.dot(A1,W1.T),B)
     R2 = np.dot(np.dot(A2,W1.T),X1)
 
-
+    t2 = 0
     for i in range(n_view):
         s1=np.random.rand(m[i], 1)
         ts1=sum(s1)
@@ -54,8 +67,15 @@ def GRAFS(X, x_view, Y, dataset, alpha, beta, gamma, lamb,kk):
         ss = np.diag(s1.flat) 
         s.append(ss)
         dd = np.zeros((feature_num,m[i]))
-        row, col = np.diag_indices(m[i])
-        dd[row,col] = np.ones((1,m[i]))
+        if i == 0:
+            row, col = np.diag_indices(m[i])
+            dd[row,col] = np.ones((1,m[i]))
+        else:
+            row = np.array(list(range(t2,t2+m[i])))
+            col = np.array(list(range(m[i])))
+
+            dd[row,col]= np.ones((1,m[i]))
+        t2 = t2+m[i]
         d.append(dd)
         pp = np.dot(B.T,x[i])
         p.append(pp)
@@ -65,7 +85,7 @@ def GRAFS(X, x_view, Y, dataset, alpha, beta, gamma, lamb,kk):
     Ay_lst = []
     options = {'metric': 'euclidean', 'neighbor_mode': 'knn', 'k': 20, 'weight_mode': 'heat_kernel', 't': 1.0}
 
-    Sy = construct_W(Y_ori, **options)
+    Sy = construct_W(Y_ori, **options)#6-9
     Sy = Sy.A
     Ay = np.diag(np.sum(Sy, 0))
     Ly = Ay - Sy
@@ -157,7 +177,7 @@ def GRAFS(X, x_view, Y, dataset, alpha, beta, gamma, lamb,kk):
     w_2 = LA.norm(W, ord=2, axis=1)
     f_idx = np.argsort(-w_2)
 
-  
+    # 记录参数
     param = dict()
     param['alpha'] = alpha
     param['beta'] = beta
@@ -165,14 +185,14 @@ def GRAFS(X, x_view, Y, dataset, alpha, beta, gamma, lamb,kk):
     param['lamb'] = lamb
     
     record = dict()
-    record['method'] = 'GRAFS'
-    record['dataset'] = dataset  
+    record['method'] = 'view6'
+    record['dataset'] = dataset  # 数据集名称
     record['running_time'] = running_time
-    record['selected_num'] = None  
+    record['selected_num'] = None  # 不设定选取的特征数量，由后续的分类阶段选取数量
     record['param'] = param
 
     record['obj_value'] = np.array(obj).reshape(1, len(obj))
-    record['idx'] = f_idx.tolist()  
+    record['idx'] = f_idx.tolist()  # 序号按照特征的重要性升序排列，最后一个最重要
 
     
     return record, iter

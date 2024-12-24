@@ -1,5 +1,5 @@
 """
-2023-framework for multi-view4 sparse main process
+framework for multi-view sparse main process
 """
 
 import time
@@ -21,7 +21,7 @@ from sklearn.metrics import label_ranking_loss
 from sklearn.metrics import coverage_error
 from sklearn.metrics import label_ranking_average_precision_score
 
-import alg.DLHI as DLHI
+import alg.DHLI as DHLI
 
 def read_general_mat_data(filename):
     matr1 = io.loadmat(filename)
@@ -225,7 +225,7 @@ if __name__ == '__main__':
             beta_best = 1
             gamma_best = 1
             lamb_best = 1
-            record, iter = DLHI.DLHI(trainX,split_point,Ytrain,dataname,alpha_best,beta_best,gamma_best,lamb_best)
+            record, iter = DHLI.DHLI(trainX,split_point,Ytrain,dataname,alpha_best,beta_best,gamma_best,lamb_best)
 
             # 评价
             print('evaluation:')

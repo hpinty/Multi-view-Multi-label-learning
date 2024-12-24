@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 eps = 2.2204e-16
 
 
-def DLHI(X, x_view, Y, dataset, alpha, beta, gamma, lamb):
+def DHLI(X, x_view, Y, dataset, alpha, beta, gamma, lamb):
     time_start = time.time()
     n_view = len(x_view)
     num, label_num = Y.shape
