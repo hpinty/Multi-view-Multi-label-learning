@@ -7,7 +7,9 @@ This repository is dedicated to our research on multi-view multi-label learning,
 Our research includes the following articles that detail our methodologies and findings:
 
 1. **"Embedded feature fusion for multi-view multi-label feature selection"** - [Pattern Recognition, 157 (2025) 110888](https://www.sciencedirect.com/science/article/pii/S0031320324006393)
-3. **"Partial multi-label feature selection via subspace optimization"** - [Information Sciences, 648 (2023) 119556](https://www.journals.elsevier.com/information-sciences)
+2. **"Partial multi-label feature selection via subspace optimization"** - [Information Sciences, 648 (2023) 119556](https://www.journals.elsevier.com/information-sciences)
+3. **"Double-Layer Hybrid-Label Identification Feature Selection for Multi-View Multi-Label Learning"**-[Proceedings of the AAAI Conference on Artificial Intelligence. 2024, 38(11): 12295-12303](https://ojs.aaai.org/index.php/AAAI/article/view/29120)
+   
 
 ## Datasets
 
