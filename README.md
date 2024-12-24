@@ -42,7 +42,7 @@ We welcome contributions from the community, including bug reports, new features
 
 For any inquiries or collaboration opportunities, please contact:
 
-- Postdoc. [Pingting Hao] ([862316425@qq.com](mailto:haopingting@jlu.edu.cn))
+- Postdoc. [Pingting Hao] ([862316425@qq.com(wx同)](mailto:haopingting@jlu.edu.cn))
 - [Jilin University]
 
 Thank you for your interest in our research!
