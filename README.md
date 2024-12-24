@@ -38,7 +38,7 @@ We kindly invite researchers and academics to cite our work in their research. Y
 
 We welcome contributions from the community, including bug reports, new features, and improvements. Please feel free to open an issue or submit a pull request.
 
-# Official Implementation
+## Official Implementation
 
 The code provided herein is the authentic and endorsed version of the algorithms and methodologies described in the paper.
 
