@@ -6,11 +6,12 @@ This repository is dedicated to our research on multi-view multi-label learning,
 
 Our research includes the following articles that detail our methodologies and findings:
 
-1. **"Uncertainty-Aware Global-View Reconstruction for Multi-View Multi-Label Feature Selection"**-[Proceedings of the AAAI Conference on Artificial Intelligence. 2025]()
-2. **"Embedded feature fusion for multi-view multi-label feature selection"** - [Pattern Recognition, 157 (2025) 110888](https://www.sciencedirect.com/science/article/pii/S0031320324006393)
-3. **"Double-Layer Hybrid-Label Identification Feature Selection for Multi-View Multi-Label Learning"**-[Proceedings of the AAAI Conference on Artificial Intelligence. 2024, 38(11): 12295-12303](https://ojs.aaai.org/index.php/AAAI/article/view/29120)
-4. **"Anchor-guided global view reconstruction for multi-view multi-label feature selection"** - [Information Sciences, 679 (2024) 121124](https://www.sciencedirect.com/science/article/pii/S0020025524010387)
-5. **"Anchor-guided global view reconstruction for multi-view multi-label feature selection"** - [Information Sciences, 681 (2024) 121215](https://www.sciencedirect.com/science/article/pii/S0020025524011290)
+1. **"Tensor-based Opposing yet Complementary Learning for Multi-view Multi-label Feature Selection"** - [Proceedings of the 33rd ACM International Conference on Multimedia. 2025](https://dl.acm.org/doi/abs/10.1145/3746027.3755447)
+2. **"Uncertainty-Aware Global-View Reconstruction for Multi-View Multi-Label Feature Selection"**-[Proceedings of the AAAI Conference on Artificial Intelligence. 2025](https://github.com/hpinty/Multi-view-Multi-label-learning/tree/main/pre-pdf)
+3. **"Embedded feature fusion for multi-view multi-label feature selection"** - [Pattern Recognition, 157 (2025) 110888](https://www.sciencedirect.com/science/article/pii/S0031320324006393)
+4. **"Double-Layer Hybrid-Label Identification Feature Selection for Multi-View Multi-Label Learning"**-[Proceedings of the AAAI Conference on Artificial Intelligence. 2024, 38(11): 12295-12303](https://ojs.aaai.org/index.php/AAAI/article/view/29120)
+5. **"Anchor-guided global view reconstruction for multi-view multi-label feature selection"** - [Information Sciences, 679 (2024) 121124](https://www.sciencedirect.com/science/article/pii/S0020025524010387)
+6. **"Exploring view-specific label relationships for multi-view multi-label feature selection"** - [Information Sciences, 681 (2024) 121215](https://www.sciencedirect.com/science/article/pii/S0020025524011290)
 
 
 ## Datasets
@@ -46,8 +47,8 @@ The code provided herein is the authentic and endorsed version of the algorithms
 
 For any inquiries or collaboration opportunities, please contact:
 
-- Postdoc. [Pingting Hao] ([862316425@qq.com(wx为前缀)](mailto:haopingting@jlu.edu.cn))
-- [Jilin University]
+- Lecture. [Pingting Hao] ([862316425@qq.com(wx为前缀)](mailto:haopingting@nenu.edu.cn))
+- [Northeast Normal University]
 
 Thank you for your interest in our research!
 
