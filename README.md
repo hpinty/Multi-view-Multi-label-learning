@@ -47,8 +47,8 @@ The code provided herein is the authentic and endorsed version of the algorithms
 
 For any inquiries or collaboration opportunities, please contact:
 
-- Postdoc. [Pingting Hao] ([862316425@qq.com(wx为前缀)](mailto:haopingting@jlu.edu.cn))
-- [Jilin University]
+- Lecture. [Pingting Hao] ([862316425@qq.com(wx为前缀)](mailto:haopingting@nenu.edu.cn))
+- [Northeast Normal University]
 
 Thank you for your interest in our research!
 
