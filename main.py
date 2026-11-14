@@ -267,6 +267,9 @@ if __name__ == '__main__':
         datapos = datapos + 1 + alg_nub
         dataposmax = dataposmax + 3
 
+    import plot_k_curves
+    plot_k_curves.main()
+
     end = time.localtime()
     print("start time=", time.asctime(start))
     print(" end  time=", time.asctime(end))
